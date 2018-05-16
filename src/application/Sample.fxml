@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <ImageView fx:id="banner" fitHeight="198.0" fitWidth="306.0" layoutX="180.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Downloads/the-ball-stadion-football-the-pitch-47730.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="Logo" layoutX="207.0" layoutY="14.0" text="True Football" textFill="#3cc47c">
+         <font>
+            <Font name="Impact" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="RonaldoPng" fitHeight="251.0" fitWidth="211.0" layoutX="47.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Pictures/ronaldo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="MessiPng" fitHeight="236.0" fitWidth="140.0" layoutX="448.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Pictures/lionel.png" />
+         </image>
+      </ImageView>
+      <ButtonBar fx:id="ButtonBar" layoutX="10.0" layoutY="277.0" prefHeight="40.0" prefWidth="639.0">
+         <buttons>
+            <Button fx:id="EPLBTN" mnemonicParsing="false" onAction="#LoadEpl" prefHeight="26.0" text="EPL" />
+            <Button fx:id="LigaBTN" mnemonicParsing="false" onAction="#LoadLiga" text="LA LIGA" />
+            <Button fx:id="SerieBTN" mnemonicParsing="false" onAction="#LoadSerie" text="SERIE A" />
+            <Button fx:id="BundeBTN" mnemonicParsing="false" onAction="#LoadBundes" prefHeight="26.0" prefWidth="106.0" text="BUNDESLIGA" />
+            <Button fx:id="MXBTN" mnemonicParsing="false" onAction="#LoadMX" text="LIGA MX" />
+            <Button fx:id="MLSBTN" minWidth="38.0" mnemonicParsing="false" onAction="#LoadMLS" prefHeight="26.0" text="MLS" />
+         </buttons>
+      </ButtonBar>
+      <TableView fx:id="TableView" layoutX="42.0" layoutY="332.0" prefHeight="282.0" prefWidth="613.0">
+        <columns>
+          <TableColumn fx:id="TeamName" minWidth="-1.0" prefWidth="130.39996337890625" text="Team" />
+            <TableColumn fx:id="FXPts" minWidth="-1.0" prefWidth="73.5999755859375" text="GP" />
+          <TableColumn fx:id="FXGamesPlayed" minWidth="-1.0" prefWidth="69.5999755859375" text="Pts" />
+            <TableColumn fx:id="FXGamesWon" minWidth="-1.0" prefWidth="103.20001220703125" text="Won" />
+            <TableColumn fx:id="FXGamesDrawn" minWidth="-1.0" prefWidth="96.79998779296875" text="Draw" />
+            <TableColumn fx:id="FXGamesLost" minWidth="-Infinity" prefWidth="105.60009765625" text="Lost" />
+        </columns>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </TableView>
+   </children>
+</Pane>
